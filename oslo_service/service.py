@@ -748,5 +748,8 @@ def launch(conf, service, workers=1, restart_method='reload'):
     else:
         launcher = ProcessLauncher(conf, restart_method=restart_method)
     launcher.launch_service(service, workers=workers)
-
+    
     return launcher
+
+def test(args):
+	print "test"
